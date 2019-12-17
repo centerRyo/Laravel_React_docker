@@ -17,5 +17,5 @@ Route::get('/', function () {
 
 Route::get('users', 'UserController@index');
 Route::get('books', 'BookController@index');
-Route::resource('comments', 'CommentController');
-Route::resource('favorites', 'FavoriteController');
+Route::get('comments', 'CommentController@index');
+Route::get('favorites', 'FavoriteController');
