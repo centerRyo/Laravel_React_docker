@@ -25,7 +25,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('users.create');
     }
 
     /**
@@ -36,7 +36,9 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $users = $request->all();
+        User::create($users);
+        return redirect('user');
     }
 
     /**
