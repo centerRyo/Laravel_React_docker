@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('users', 'UserController');
-Route::resource('books', 'BookController');
+Route::get('users', 'UserController@index');
+Route::get('books', 'BookController@index');
 Route::resource('comments', 'CommentController');
 Route::resource('favorites', 'FavoriteController');
