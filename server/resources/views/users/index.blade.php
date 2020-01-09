@@ -2,6 +2,9 @@
 @section('title', 'ユーザー一覧')
 @section('content')
 <div class="container">
+    <div class="row justify-content-end">
+        <a href="users/create" class="btn btn-info" style="margin-top: 20px;">追加</a>
+    </div>
     <div class="mt-2 row">
         <table class="table table-striped">
             <thead>
