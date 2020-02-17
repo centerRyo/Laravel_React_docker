@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('title', '新規本登録')
 @section('content')
-<form action="">
+<form action="{{ url('books')}}" method="post">
+@csrf
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-7">
